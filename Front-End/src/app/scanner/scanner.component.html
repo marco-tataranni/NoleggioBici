@@ -4,4 +4,12 @@
 <div *ngIf="qrResultString">
   <p>{{ qrResultString }}</p>
 </div>
+<div>
+  <br>
+  <button type="button" *ngIf="!loading" class="btn btn-primary" (click)="getCurrentLocation()">Prenota Bici 1</button>
+</div>
 
+<div *ngIf="loading"  class="col-sm-2" id='divBici'>
+  <p id='bici'>BICI </p>
+  <button type="button" class="btn btn-secondary" id='rilascia' (click)="getCurrentLocationRilascio()">RILASCIA</button>
+</div>

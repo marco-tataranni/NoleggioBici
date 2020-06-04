@@ -1,4 +1,4 @@
-<!--Tataranni Marco-->
+
 <div *ngIf="showbutton">
   <button  (click)="mostralogin()">LOGIN</button>
 
@@ -30,4 +30,4 @@ LOGIN<br>
 
 </div>
 <p *ngIf="risposta">{{risposta}}</p>
-<app-scanner *ngIf="showscanner"></app-scanner>
+<app-scanner *ngIf="showscanner" [IdUtente]="IdUtente"></app-scanner>
