@@ -63,6 +63,7 @@ export class ScannerComponent implements OnInit {
         console.log(this.myDate2, this.myTime2);
         this.noleggio.sendDataRilascio(this.IdUtente, this.IdBici, this.myDate, this.myTime, this.currLat, this.currLng, this.myDate2, this.myTime2);
         this.loading = false;
+        this.qrResultString=null;
       });
     }
     else {
